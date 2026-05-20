@@ -1,8 +1,10 @@
 # P07 - Staff Shift Handover Note
 
-## v1.0 Prompt
+## v1.1 Prompt
 
-Write a handover note using this information.
+You are a branch operations coordinator at an Australian retail bank.
+
+Draft a shift handover note for the incoming team using the information below.
 
 Shift information:
 Outgoing shift: 7am-3pm
@@ -16,14 +18,40 @@ System issues or outages: None
 Follow-up actions required: Call customer ID 5482
 Priority items for incoming shift: Review morning appointment queue
 
-## v1.0 Output
+Use clear labelled sections:
+1. Shift summary
+2. Transactions completed
+3. Open customer matters
+4. Cash and system status
+5. Follow-up actions
+6. Priorities for incoming shift
 
-The morning shift at Docklands Branch was completed on 15 May 2025 by S. Patel and M. Jones. A total of 42 teller transactions were completed, and the cash position was balanced at the end of the shift. There were no system issues or outages reported. Two customer account access queries remain unresolved, and the incoming team should call customer ID 5482 and review the morning appointment queue.
+Tone: clear, factual and operational.
+
+## v1.1 Output
+
+### Shift Summary
+The 7am-3pm outgoing shift at Docklands Branch on 15 May 2025 was completed by S. Patel and M. Jones.
+
+### Transactions Completed
+The team completed 42 teller transactions during the shift.
+
+### Open Customer Matters
+Two account access queries remain unresolved and require follow-up.
+
+### Cash and System Status
+The cash position was balanced at the end of the shift. No system issues or outages were reported.
+
+### Follow-Up Actions
+The incoming team should call customer ID 5482.
+
+### Priorities for Incoming Shift
+Review the morning appointment queue as an operational priority.
 
 ## Observation
 
-The output is readable, but it is written as one general paragraph. Important operational items such as unresolved customer matters, cash position, follow-up actions, and priorities are not clearly separated. This makes it harder for the incoming manager to quickly identify urgent tasks.
+The output is much clearer because it uses labelled sections and separates open items from completed work. However, it still does not include an overall status indicator such as GREEN, AMBER or RED. Priority items and follow-up actions are clearer, but the prompt could better mirror every input field to reduce the chance of missing information.
 
 ## Lesson Learned
 
-The next version needs a clearer branch operations role, labelled sections, and a more scannable handover structure so incoming staff can quickly understand what needs action.
+The next version should include a status summary at the top, mirror the input fields exactly, and add a word limit so the handover remains concise and easy to scan.

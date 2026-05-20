@@ -1,8 +1,10 @@
 # P05 - Branch Performance Report Narrative
 
-## v1.0 Prompt
+## v1.1 Prompt
 
-Write a monthly branch performance report using this data.
+You are a senior business analyst at an Australian retail bank.
+
+Using the branch performance data below, write a monthly performance narrative for the regional management team.
 
 Branch: Carlton Branch
 Month: May 2025
@@ -15,18 +17,36 @@ Loan conversion rate: 32%
 Staff headcount: 12
 Overtime hours: 64
 
-## v1.0 Output
+Output the response using these sections:
+1. Overall performance summary
+2. Positive indicators
+3. Areas requiring attention
+4. Outlook for next month
 
-Carlton Branch had a mixed performance in May 2025. The branch opened 92 new accounts against a target of 100, which shows a strong performance but still slightly below the expected target. The Net Promoter Score of 47 indicates that customer satisfaction is generally positive, although the 18 complaints suggest that some customers may be unhappy with service quality.
+Use a professional and constructive tone.
 
-The branch submitted 34 loan applications with a 32% conversion rate, which may indicate that staff are generating interest in lending products but could improve follow-up or sales conversion. Overtime hours were high at 64, which may suggest that staff were under pressure or that the branch may need better scheduling support.
+## v1.1 Output
 
-Overall, the branch performed reasonably well but should focus on reducing complaints, improving loan conversion and managing staff workload more effectively in the next month.
+### 1. Overall Performance Summary
+
+Carlton Branch delivered a steady performance in May 2025, with strong customer acquisition activity and ongoing lending opportunities. The branch opened 92 new accounts against a target of 100, reaching 92% of its monthly target.
+
+### 2. Positive Indicators
+
+The branch maintained a positive Net Promoter Score of 47, suggesting generally favourable customer sentiment. It also submitted 34 loan applications, showing continued customer interest in lending products.
+
+### 3. Areas Requiring Attention
+
+Customer complaints reached 18 for the month, which should be reviewed to identify recurring issues. Overtime hours were 64, which may indicate workload pressure or roster imbalance.
+
+### 4. Outlook for Next Month
+
+Next month, the branch should focus on closing the gap to the new-account target, monitoring complaint themes and supporting staff productivity.
 
 ## Observation
 
-The output is readable, but it is too broad and makes assumptions about causes such as staff pressure and follow-up quality without evidence. It does not have a clear management-report structure and may require manager editing before it can be used in a monthly performance pack.
+The output is better because it uses clear sections and sounds more appropriate for management reporting. However, it still makes a possible assumption that overtime may indicate workload pressure or roster imbalance. The prompt needs stronger grounding to avoid speculation not supported by the data.
 
 ## Lesson Learned
 
-The next version needs a clear analyst role, structured reporting sections, and a more objective tone so the output is suitable for management review.
+The final version should include a no-speculation rule, exact metric placeholders, a word limit and clear constraints to keep the narrative objective and data-based.

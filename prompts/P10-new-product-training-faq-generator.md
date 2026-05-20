@@ -1,50 +1,54 @@
-        # P10 - New Product Training FAQ Generator
+# P09 - Suspicious Transaction Narrative for AML Review
 
-## v1.0 Prompt
+## v1.1 Prompt
 
-Generate FAQs for this new banking product.
+You are an AML analyst at an Australian retail bank.
 
-Product: Saver Plus Account
+Review the following transaction data and prepare a short internal review note.
 
-Product details:
-- Savings account for regular deposit customers
-- Target customers: young professionals and students
-- Features: bonus interest, mobile alerts, no monthly fee
-- Eligibility: Australian resident, 18+, linked transaction account
-- Fees and rates: $0 monthly fee, variable bonus interest rate
+Customer ID: CUST-77821
+Account type: Business transaction account
+Date range: 1-14 May 2025
+Flagged transactions:
+- 2 May: Cash deposit $9,700
+- 5 May: Cash deposit $9,850
+- 8 May: Cash deposit $9,600
+- 12 May: Cash deposit $9,900
+Transaction pattern flag: Structuring
+Customer risk profile: HIGH
 
-## v1.0 Output
+Output:
+1. Brief description of the transaction pattern
+2. Possible AML concern
+3. Questions for further review
+4. Recommended next step
 
-### FAQs for Saver Plus Account
+Use professional and objective language.
 
-**1. What is the Saver Plus Account?**  
-It is a savings account that helps customers build regular savings while earning bonus interest.
+## v1.1 Output
 
-**2. Who is this account for?**  
-It is suitable for students and young professionals who want to save money.
+### 1. Transaction Pattern
 
-**3. Does the account have a monthly fee?**  
-No, the account does not have a monthly fee.
+CUST-77821 made four cash deposits between 2 May and 12 May 2025, each below $10,000. The amounts ranged from $9,600 to $9,900 and were made within a short date range.
 
-**4. Can customers get bonus interest?**  
-Yes, customers may be able to earn bonus interest when they meet account conditions.
+### 2. Possible AML Concern
 
-**5. Can customers use mobile alerts?**  
-Yes, mobile alerts are available to help customers track their account activity.
+The transaction pattern may be consistent with structuring and requires further AML review, particularly because the customer risk profile is HIGH.
 
-**6. Who can apply?**  
-Customers who are Australian residents aged 18 or older can apply.
+### 3. Questions for Further Review
 
-**7. Are rates fixed?**  
-Rates may vary depending on the bank's terms.
+- Is this cash activity consistent with the customer’s known business profile?
+- Are there invoices, sales records, or business explanations supporting the deposits?
+- Has the customer shown similar cash deposit behaviour previously?
 
-**8. How can staff explain this product?**  
-Staff can explain it as a simple savings account designed for regular saving.
+### 4. Recommended Next Step
+
+Refer the alert to an AML analyst for further investigation and supporting-document review.
 
 ## Observation
 
-The output is readable but too generic. It does not clearly support frontline staff training because it lacks practical customer scenarios, compliance warnings, and guidance about what staff should avoid saying.
+The output is more objective than v1.0 and no longer directly accuses the customer. However, it still does not include a clear Suspicious Matter Report threshold option and does not mention AUSTRAC reporting obligations or the need to exclude customer names.
 
 ## Lesson Learned
 
-The next version needs a clearer learning and development role, frontline staff audience, answer limits, and more practical training guidance.
+The final version needs stronger compliance boundaries, explicit no-speculation wording, privacy controls, investigation questions, and clear threshold language.

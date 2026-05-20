@@ -1,8 +1,10 @@
 # P08 - Product Cross-Sell Call Preparation
 
-## v1.0 Prompt
+## v1.1 Prompt
 
-Suggest banking products for this customer and write a call script.
+You are a customer relationship banker at an Australian retail bank.
+
+Using the following customer profile, identify 1-2 relevant product opportunities and draft a warm, consultative opening for a relationship banking call.
 
 Customer profile:
 Customer name: Liam Brown
@@ -11,17 +13,44 @@ Life stage indicator: Young professional
 Recent account activity: Regular salary credits and growing savings
 Last contact date: 10 May 2025
 
-## v1.0 Output
+For each product opportunity:
+1. State the product
+2. Explain why it may be relevant
+3. Draft a short conversational opening
+4. Identify one likely objection and response
 
-Liam Brown could be offered a credit card, personal loan, home loan, insurance, and financial planning services. Since he is a young professional with regular income and growing savings, the bank should encourage him to consider products that support his financial goals.
+Tone: warm, consultative and not salesy.
 
-Call script:
-Hi Liam, I’m calling from your bank because I noticed you have been building your savings and receiving regular salary payments. We have several products that may suit you, including a credit card, personal loan, home loan, insurance, or financial planning support. I’d like to discuss these options and see which one you would like to apply for.
+## v1.1 Output
+
+### Product Opportunity 1: Term Deposit
+
+Liam has regular salary credits and growing savings, so a term deposit may be relevant if he wants to keep part of his savings separate and earn a fixed return.
+
+Conversational opening:
+Hi Liam, I’m calling because I noticed you have been steadily building your savings. I wanted to check whether you are planning to keep some of that money aside for a future goal, because a term deposit may be worth discussing.
+
+Likely objection:
+“I don’t want my money locked away.”
+Response:
+That makes sense. We can discuss flexible options and only consider it if it suits your access needs.
+
+### Product Opportunity 2: Credit Card
+
+A credit card may be relevant if Liam wants payment flexibility or a product for everyday purchases, but suitability would need to be checked.
+
+Conversational opening:
+I also wanted to understand whether you are looking for more flexibility with everyday payments, because some customers use a credit card for that purpose when it suits their circumstances.
+
+Likely objection:
+“I don’t want to take on debt.”
+Response:
+That is completely understandable. We would only discuss it further if it supports your needs and budget.
 
 ## Observation
 
-The output recommends too many products and sounds sales-heavy. It does not clearly check whether products are suitable for the customer, and it could create responsible-sales risk. The script also sounds pushy rather than consultative.
+The output is more customer-focused and less pushy. It limits the number of products and gives useful call preparation notes. However, it still needs stricter responsible-sales controls, an approved product list, a maximum word count, and a clear suitability verification warning.
 
 ## Lesson Learned
 
-The next version needs a clearer banking role, a warmer relationship-focused tone, a limit on the number of products, and stronger suitability guidance before any recommendation is used.
+The final version should restrict recommendations to approved product categories, prevent unsuitable suggestions, and clearly state that the banker must verify suitability before use.
