@@ -1,20 +1,39 @@
 # P02 - Customer Complaint Triage and Routing
 
-## v1.0 Prompt
+## v1.1 Prompt
 
-Categorise this customer complaint and tell me who should handle it.
+You are a complaints management specialist at an Australian retail bank.
 
-Complaint:
+Review the following customer complaint and classify it for internal routing.
+
+Complaint text:
 I was charged a fee I was told would be waived. I contacted the bank twice and nobody has fixed it.
 
-## v1.0 Output
+Output the following sections:
+1. Complaint category
+2. Urgency level: High / Medium / Low
+3. Recommended team
+4. One-line complaint summary
+5. Suggested next action
 
-This complaint appears to be about a fee issue. The customer is unhappy because they were charged a fee that they expected to be waived. This should probably be handled by the customer service team or the accounts team. The bank should respond and investigate the charge.
+Use a professional and neutral banking tone.
+
+## v1.1 Output
+
+1. Complaint category: Fees
+
+2. Urgency level: Medium
+
+3. Recommended team: Customer service or fees specialist team
+
+4. One-line complaint summary: The customer disputes a fee they were told would be waived and is dissatisfied because previous contacts did not resolve the issue.
+
+5. Suggested next action: Review the customer’s account fee history, check any previous waiver agreement, and contact the customer with an update.
 
 ## Observation
 
-The output is understandable, but it is too general for a banking workflow. It does not provide a fixed category, urgency level, routing team, or system-ready format. A staff member would still need to manually interpret and re-enter the result into a CRM system.
+The output is clearer and more useful than v1.0 because it has a banking role and structured sections. However, it is still not ideal for automation because the category and team names are not fixed, and the output is not in JSON format for CRM routing. It also does not identify possible regulatory escalation.
 
 ## Lesson Learned
 
-The next version needs a clearer banking role, structured classification fields, and stronger routing logic so the output can support complaint handling more efficiently.
+For complaint triage automation, the prompt needs fixed categories, JSON-only output, urgency criteria, and a regulatory flag so the result can be used reliably by a CRM workflow.

@@ -1,22 +1,44 @@
 # P04 - KYC Document Completeness Checker
 
-## v1.0 Prompt
+## v1.1 Prompt
 
-Check whether these KYC documents are complete.
+You are a compliance analyst at an Australian retail bank.
 
-Account type: Everyday transaction account  
-Entity type: Individual  
+Review the following KYC documents for an individual customer opening an everyday transaction account.
+
 Documents submitted: Passport, Medicare card, utility bill  
 Customer risk tier: MEDIUM
 
-## v1.0 Output
+Identify:
+1. Documents that appear complete
+2. Any missing documents
+3. Any documents that may need expiry or validity checking
+4. Any follow-up actions for the KYC analyst
 
-The KYC documents appear mostly complete because the customer has submitted a passport, Medicare card, and a utility bill. These documents should generally be enough to confirm identity and address for an individual customer. The application can likely proceed, although the compliance team may still need to check whether the documents are valid and current.
+Use a professional compliance tone.
+
+## v1.1 Output
+
+### Complete Documents
+- Passport submitted
+- Medicare card submitted
+- Utility bill submitted as address evidence
+
+### Missing Documents
+- No obvious missing documents identified from the information provided.
+
+### Validity Checks Required
+- Confirm the passport has not expired.
+- Confirm the Medicare card is current.
+- Confirm the utility bill is recent and matches the customer’s declared residential address.
+
+### Follow-Up Actions
+The KYC analyst should verify document validity, confirm the customer’s identity details against internal checklist requirements, and ensure the medium risk tier does not require additional review.
 
 ## Observation
 
-The output is too vague for a compliance workflow. It says the documents are “mostly complete” without clearly listing which items are complete, missing, expired, or requiring follow-up. It also sounds like the application can proceed, which is risky because a human analyst must make the final compliance judgement.
+The output is more useful because it uses a compliance role and separates complete items, missing items, validity checks, and follow-up actions. However, it still assumes “no obvious missing documents” without being grounded in a specific bank checklist. It also needs stronger wording that the AI cannot make a compliance decision.
 
 ## Lesson Learned
 
-The next version needs a clear compliance role, document-check categories, and risk-tier context so the output becomes useful for a KYC analyst rather than a general summary.
+The final version needs strict grounding, clearer checklist formatting, enhanced due diligence logic for high-risk customers, and a clear statement that the output is only for analyst review.
